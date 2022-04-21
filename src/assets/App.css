@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  animation: fade-in .5s;
+  height: auto;
+  width: 100%;
+  /*background-color: #0b0c0e;*/
+  overflow-x: hidden;
+}
+
+.header {
+  /*background-color: rgba(26, 32, 40);*/
+  background-color: transparent;
+  z-index: 2;
+  @apply h-32 flex items-center justify-between text-base text-white w-screen px-32 font-quick relative;
+}
+
+
+.home {
+  background-position: 40% 10%;
+  overflow: hidden;
+  background-size: 200%;
+  animation: backgrounInMoveMain ;
+  background-color: #282c34;
+  color: #689d94;
+  @apply -mt-32 flex flex-col h-screen w-full text-white p-32 animate-backgrounInMoveMain font-quick;
+}
+
+.info {
+  background-position: 260% -30%;
+  overflow: hidden;
+  background-size: 86%;
+  animation: backgrounInMoveInfo;
+  background-color: #0f1014;
+  background-repeat: no-repeat;
+  color: #689d94;
+  height: 92vh;
+  @apply -mt-32 w-full text-white p-32 flex items-center animate-backgrounInMoveInfo justify-start;
+}
+
+.App-footer {
+  background-color: #1c2728;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: white;
+  padding: 0 4rem;
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+    }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.loader h1 {
+  width: 43%;
+  line-height: 3rem;
+}
