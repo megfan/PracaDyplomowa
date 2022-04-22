@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import {Route, Routes, useLocation} from 'react-router-dom';
-import {AnimatePresence} from 'framer-motion';
 import {Navbar} from "./Navbar";
 import {Info} from "./Info";
 import {Footer} from "./Footer";
@@ -12,7 +11,6 @@ export const Routing: FC = (props) => {
     let key = location.pathname;
 
     return <>
-        <AnimatePresence>
             <Navbar/>
             <Routes location={location} key={key}>
                 <Route path={'/'}
@@ -21,6 +19,5 @@ export const Routing: FC = (props) => {
                        element={<Info/>}/>
             </Routes>
             <Footer/>
-        </AnimatePresence>
     </>
 }
