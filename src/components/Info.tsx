@@ -1,21 +1,11 @@
 import React, {FC} from 'react';
-import {motion} from 'framer-motion';
 import Ch3 from "../assets/Ch3.jpg";
 
 interface InfoProps {
 }
 
 export const Info: FC<InfoProps> = (props) => {
-    return <motion.div className="info"
-                       style={{backgroundImage: `url(${Ch3}`}}
-                       initial={{y: '2000px', opacity: 0}}
-                       animate={{y: 0, opacity: 1}}
-                       exit={{y: window.innerWidth, opacity: 1}}
-                       transition={{
-                           duration: 1,
-                           ease: "easeInOut",
-                           delay: .5
-                       }}>
+    return <div className="info" style={{backgroundImage: `url(${Ch3}`}}>
         <p className='w-2/5 text-left'>
             Bacon ipsum dolor amet chuck pig biltong, spare ribs ham hock buffalo doner salami pork chop beef. Cupim
             turkey capicola, meatball picanha ham pork chop frankfurter jerky. Alcatra kevin pork cow swine turducken,
@@ -31,5 +21,5 @@ export const Info: FC<InfoProps> = (props) => {
             shank spare ribs, beef chicken pork loin. Venison ribeye strip steak salami brisket kevin prosciutto
             meatball.
         </p>
-    </motion.div>
+    </div>
 }

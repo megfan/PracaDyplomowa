@@ -6,7 +6,6 @@ import {ingredientsList} from "../../localDB/DB";
 import {headerData} from "../../localDB/headerData";
 import {Summary} from "../Summary";
 import {RecomendedDoses} from "../RecomendedDoses";
-import {motion} from 'framer-motion';
 import {DataTableBody} from "./DataTableBody";
 
 export const DataTable: FC = observer(() => {
@@ -14,15 +13,7 @@ export const DataTable: FC = observer(() => {
 
     return <>
 
-        <motion.div className="relative overflow-x-auto my-16 mx-24 pb-8"
-                    initial={{y: '2000px', opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    exit={{y: window.innerWidth, opacity: 1}}
-                    transition={{
-                        duration: 1,
-                        ease: "easeInOut",
-                        delay: .5
-                    }}>
+        <div className="relative overflow-x-auto my-16 mx-24 pb-8">
             <div className='mt-32 mb-32 text-greenTxt font-quick flex flex-col items-center'>
                 <h1 className='text-4xl font-semibold mb-4'>
                     Arkusz obliczeniowy receptur mieszanek</h1>
@@ -42,6 +33,6 @@ export const DataTable: FC = observer(() => {
                 <RecomendedDoses/>
             </table>
             </div>
-        </motion.div>
+        </div>
     </>
 }); 
