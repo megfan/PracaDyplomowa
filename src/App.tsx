@@ -7,7 +7,7 @@ import {Routing} from "./components/Routing";
 export const App: FC = observer(() => {
     return (
         <div className='App'>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter basename={'pracadyplomowa'}>
                 <Routing/>
             </BrowserRouter>
         </div>
