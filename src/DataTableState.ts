@@ -56,7 +56,7 @@ export class DataTableState {
             if (row !== undefined) {
                 Object.keys(row).map(e => {
                     let previousValue = this.summaryValues.get(e);
-                    this.summaryValues.set(e, Number(((((row as any)[e] * val) / 100) + (previousValue ?? 0)).toFixed(2)))
+                    return this.summaryValues.set(e, Number(((((row as any)[e] * val) / 100) + (previousValue ?? 0)).toFixed(2)))
                 })}
         })
     }
