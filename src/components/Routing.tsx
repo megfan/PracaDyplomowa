@@ -11,13 +11,17 @@ export const Routing: FC = (props) => {
     let key = location.pathname;
 
     return <>
-            <Navbar/>
+        <Navbar/>
+        <main>
             <Routes location={location} key={key}>
                 <Route path={'/'}
+                       caseSensitive={true}
                        element={<Main/>}/>
                 <Route path={'/info'}
+                       caseSensitive={true}
                        element={<Info/>}/>
             </Routes>
-            <Footer/>
+        </main>
+        <Footer/>
     </>
 }
