@@ -1,7 +1,7 @@
 {
   "name": "pracadyplomowa",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://megfan.github.io/PracaDyplomowa/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -45,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.3.0",
     "tailwindcss": "^3.0.24"
   }
 }
