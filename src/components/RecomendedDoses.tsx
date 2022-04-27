@@ -20,6 +20,7 @@ export const RecomendedDoses = () => {
             <th className="px-6 py-3">P ogólny</th>
             <th className="px-6 py-3">Na</th>
         </tr>
+        
         {recommendedDosesData.map(d => {
             return <tr
                 className="bg-white border-b dark:bg-white dark:border-gray-100 hover:bg-gray-50 dark:hover:bg-gray-200"
