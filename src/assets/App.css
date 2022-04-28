@@ -33,7 +33,8 @@
   /*background-color: #0f1014;*/
   background-repeat: no-repeat;
   height: 92vh;
-  @apply -mt-32 w-full text-white bg-blue p-32 flex flex-col font-quick items-start animate-backgrounInMoveInfo justify-start;
+  @apply -mt-32 w-full text-white bg-blue p-32 flex flex-col 
+  font-quick items-start animate-backgrounInMoveInfo justify-items-start;
 }
 
 .footer {
