@@ -5,21 +5,14 @@ interface InfoProps {
 }
 
 export const Info: FC<InfoProps> = (props) => {
-    return <div className="info" style={{backgroundImage: `url(${Ch3}`}}>
-        <p className='w-2/5 text-left'>
-            Bacon ipsum dolor amet chuck pig biltong, spare ribs ham hock buffalo doner salami pork chop beef. Cupim
-            turkey capicola, meatball picanha ham pork chop frankfurter jerky. Alcatra kevin pork cow swine turducken,
-            turkey sausage rump. Cow turducken sirloin tongue chislic. Turducken biltong landjaeger meatball, kielbasa
-            pork chop frankfurter rump bacon ground round pig beef ribs.
-            Drumstick filet mignon venison, shank salami pork chop shankle swine cow turkey. Sausage shoulder ham
-            turkey, frankfurter salami picanha kevin cow pork belly venison drumstick bresaola. Turducken t-bone
-            pancetta chuck landjaeger. Kielbasa tenderloin porchetta alcatra prosciutto strip steak spare ribs t-bone
-            ham turducken. Shoulder filet mignon shankle short loin. Rump filet mignon porchetta picanha doner.
-            Short ribs shankle buffalo biltong beef ribs. Boudin kevin flank, strip steak meatloaf short ribs biltong
-            porchetta. Turkey kielbasa corned beef tongue, pork hamburger pastrami strip steak capicola pork belly.
-            Short loin corned beef ribeye bresaola. Tenderloin venison landjaeger strip steak ham hock. Ribeye jowl
-            shank spare ribs, beef chicken pork loin. Venison ribeye strip steak salami brisket kevin prosciutto
-            meatball.
+    return <div className="info mt-8" style={{backgroundImage: `url(${Ch3}`}}>
+        <h1 className='text-4xl text-blueTxt mb-4'>Żywienie kur nieśnych i brojlerów</h1>
+        <div className='bg-blueTxt w-32 h-1 p-0.5 my-4 rounded-2xl'> </div>
+        <p className='w-2/5 text-left text-sm mt-8 tracking-widest font-light break-words text-justify'>
+           Pasza dla kur powinna być dobrze zbilansowana. Ze względu na ograniczoność pobierania (bezzębny dziób) i specyfikę budowy ukłądu pokarmowego.
+            Podstawą są pasze treściwe, podawane w formie rozdrobnionej dla zwiększenia ich dostępności dla enzymów trawiennych.
+            Podstawą mieszanek najczęściej stosowanych w chowie przydomowym są zboża – smaczne, łatwostrawne, o wysokiej zawartości węglowodanów, głównie w formie skrobi. Należy jednak pamiętać, że białka zbóż nie są w stanie zaspokoić zapotrzebowania ptaków na proteiny, a szczególnie aminokwasy egzogenne (niezbędne do życia, a niesyntetyzowane w organizmie) – lizynę i metioninę. I tak pszenica ma za mało leucyny, żyto zawiera mało tryptofanu i treoniny, a ponadto posiada wiele substancji antyżywieniowych, dlatego nie jest polecane w kurzej diecie. Pszenżyto z kolei zawiera mniej szkodliwych z iązków, a przy tym ma więcej lizyny. Kukurydza ma bardzo wysoką wartość energetyczną, a dzięki ksantofilom (żółtym barwnikom roślinnym należącym do karotenoidów) zabarwia żółtko na pożądany kolor. Nie należy jednak podawać jej w nadmiernych ilościach, ponieważ zbyt wysoki udział w dawce może skutkować otłuszczeniem niosek. Owies dobrze uzupełnia energię i witaminy z grupy B, ale jest niestety zbyt włóknisty, by stosować go w dużym udziale bez pogorszenia strawności paszy. W hodowlach przyzagrodowych świetnie sprawdza się natomiast wzbogacanie jadłospisu niosek o gotowane lub parowane ziemniaki, tartą marchew, buraki, kapustę. Ptaki powinny mieć ponadto dostęp do zielonki.
         </p>
+        <p className='text-blueTxt text-xs mt-4'>Materiał opublikowany w tygodnikach Wydawnictwa Promocji Regionu: CGD, CBR, CWA, CRY, CLI 16 lutego 2017 r.</p>
     </div>
 }

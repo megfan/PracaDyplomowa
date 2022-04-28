@@ -13,7 +13,7 @@ export const DataTable: FC = observer(() => {
 
     return <>
 
-        <div className="relative overflow-x-auto my-16 mx-24 pb-8">
+        <div className="relative overflow-x-auto my-16 mx-16 pb-8">
             <div className='mt-32 mb-32 text-greenTxt font-quick flex flex-col items-center'>
                 <h1 className='text-4xl font-semibold mb-4'>
                     Arkusz obliczeniowy receptur mieszanek</h1>

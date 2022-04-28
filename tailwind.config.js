@@ -10,18 +10,21 @@ module.exports = {
         extend: {
             backgroundColor: {
                 'basic': '#4A4E5E',
-                'greenDark': '#1c2728',
-                'greenMedium': '#253234',
+                'greenDark': '#21252c',
+                'greenMedium': '#2c3340',
                 'greenLight': '#283a36',
-                'greenTxt': '#689d94',
+                'greenTxt': '#7685a1',
+                'blueTxt': '#689d94',
+                'blue': '#0f1014',
             },
             borderColor: {
-                'greenMedium': '#253234',
-                'greenDark': '#1c2728',
-                'greenLight': '#283a36',
+                'greenMedium': '#2c3340',
+                'greenDark': '#21252c',
+                'greenLight': '#303642',
             },
             textColor: {
-                'greenTxt': '#689d94',
+                'blueTxt': '#689d94',
+                'greenTxt': '#7685a1',
             },
             ringColor: {
                 'greenLight': '#283a36',

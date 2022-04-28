@@ -501,6 +501,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .mr-4{
   margin-right: 1rem;
 }
@@ -777,11 +781,6 @@ body, html, #root {
 .hover\:bg-greenDark:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(28 39 40 / var(--tw-bg-opacity));
-}
-
-.hover\:text-greenTxt:hover{
-  --tw-text-opacity: 1;
-  color: rgb(104 157 148 / var(--tw-text-opacity));
 }
 
 .focus\:border-greenLight:focus{
