@@ -1,7 +1,7 @@
 import {observer} from "mobx-react-lite"
 import React, {FC} from "react";
 import {DataTableHeader} from "./DataTableHeader";
-import {dataState} from "../../DataTableState";
+import {dataState} from "./DataTableState";
 import {ingredientsList} from "../../localDB/DB";
 import {headerData} from "../../localDB/headerData";
 import {Summary} from "../Summary";
@@ -18,7 +18,7 @@ export const DataTable: FC = observer(() => {
                 <h1 className='text-4xl font-semibold mb-4'>
                     Arkusz obliczeniowy receptur mieszanek</h1>
                 <h2 className='text-xl'>Wykonany na podstawie materiałów opracowanych przez dr hab. Andrzej Łozicki, prof. SGGW</h2>
-                <div className='bg-greenTxt w-32 h-1 mt-16 rounded-2xl'> </div>
+                <div className='bg-green w-32 h-1 mt-16 rounded-2xl'> </div>
             </div>
             <div className="rounded-2xl relative overflow-x-auto">
             <table className="w-full text-sm text-left text-greenTxt dark:greenTxt pb-8 shadow-md rounded-lg ">

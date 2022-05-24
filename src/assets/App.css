@@ -1,61 +1,84 @@
 .App {
-  text-align: center;
-  animation: fade-in .5s;
-  height: auto;
-  width: 100%;
-  /*background-color: #0b0c0e;*/
-  overflow-x: hidden;
+    text-align: center;
+    animation: fade-in .5s;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
-  /*background-color: rgba(26, 32, 40);*/
-  background-color: transparent;
-  z-index: 2;
-  @apply h-32 flex items-center justify-between text-base text-white w-screen px-32 font-quick relative;
+    position: fixed;
+    background-color: rgba(0,0,0, .4);
+    z-index: 2;
+    @apply h-16 flex items-center justify-between text-base text-white w-screen px-32 font-quick;
 }
 
-
 .home {
-  background-position: 40% 10%;
-  overflow: hidden;
-  background-size: 200%;
-  animation: backgrounInMoveMain ;
-  background-color: #282c34;
-  color: #689d94;
-  @apply -mt-32 flex flex-col h-screen w-full text-white p-32 animate-backgrounInMoveMain font-quick;
+    background-position: 40% 10%;
+    overflow: hidden;
+    background-size: 200%;
+    animation: backgrounInMoveMain;
+    background-color: #282c34;
+    color: #689d94;
+    @apply  flex flex-col h-screen w-full text-white p-32 font-quick;
+}
+
+.home.chicken {
+    animation: backgrounInMoveMainChicken;
+    @apply animate-backgrounInMoveMainChicken;
+}
+
+.home.duck {
+    animation: backgrounInMoveMainDuck;
+    @apply animate-backgrounInMoveMainDuck;
 }
 
 .info {
-  background-position: 260% -30%;
-  overflow: hidden;
-  background-size: 86%;
-  animation: backgrounInMoveInfo;
-  /*background-color: #0f1014;*/
-  background-repeat: no-repeat;
-  height: 92vh;
-  @apply -mt-32 w-full text-white bg-blue p-32 flex flex-col 
-  font-quick items-start animate-backgrounInMoveInfo justify-items-start;
+    overflow: hidden;
+    /*background-color: #0f1014;*/
+    background-repeat: no-repeat;
+    height: 92vh;
+    @apply -mt-32 w-full text-white bg-blue p-32 flex flex-col
+    font-quick items-start justify-items-start;
+}
+
+.info.fullScreen {
+    background-position: 260% -30%;
+    background-size: 86%;
+    animation: backgrounInMoveInfo;
+    @apply animate-backgrounInMoveInfo;
+}
+.info.halfScreen {
+    background-position: 100% 0;
+    background-size: 110%;
+    animation: backgrounInMoveInfoHalfScreen;
+    @apply animate-backgrounInMoveInfoHalfScreen;
+}
+.info.small {
+    background-size: 40%;
+    @apply items-end;
+    
 }
 
 .footer {
-  /*background-color: #1c2728;*/
-  height: 8vh;
-  font-size: 14px;
-  padding: 0 4rem;
-  @apply bg-greenDark flex justify-between items-center text-greenTxt;
+    /*background-color: #1c2728;*/
+    height: 8vh;
+    font-size: 14px;
+    padding: 0 4rem;
+    @apply bg-dark flex justify-between items-center text-greenTxt;
 }
 
 @keyframes fade-in {
-  from {
-      opacity: 0;
+    from {
+        opacity: 0;
     }
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 
 .loader h1 {
-  width: 43%;
-  line-height: 3rem;
+    width: 43%;
+    line-height: 3rem;
 }

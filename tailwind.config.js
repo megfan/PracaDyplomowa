@@ -10,10 +10,10 @@ module.exports = {
         extend: {
             backgroundColor: {
                 'basic': '#4A4E5E',
-                'greenDark': '#21252c',
+                'dark': '#21252c',
                 'greenMedium': '#2c3340',
-                'greenLight': '#283a36',
-                'greenTxt': '#7685a1',
+                'greenLight': '#3d4656',
+                'green': '#5fd9d0',
                 'blueTxt': '#689d94',
                 'blue': '#0f1014',
             },
@@ -23,8 +23,9 @@ module.exports = {
                 'greenLight': '#303642',
             },
             textColor: {
-                'blueTxt': '#689d94',
-                'greenTxt': '#7685a1',
+                'blueTxt': '#5fd9d0',
+                'greenTxt': '#5fd9d0',
+                'darkTXT': '#21252c',
             },
             ringColor: {
                 'greenLight': '#283a36',
@@ -34,11 +35,13 @@ module.exports = {
                 radiusSmall: '1rem',
             },
             animation: {
-                'backgrounInMoveMain' : 'backgrounInMoveMain 20s ease-in-out infinite',
+                'backgrounInMoveMainChicken' : 'backgrounInMoveMainChicken 20s ease-in-out infinite',
+                'backgrounInMoveMainDuck' : 'backgrounInMoveMainDuck 20s ease-in-out infinite',
                 'backgrounInMoveInfo' : 'backgrounInMoveInfo 20s ease-in-out infinite',
+                'backgrounInMoveInfoHalfScreen' : 'backgrounInMoveInfoHalfScreen 20s ease-in-out infinite',
             },
             keyframes: {
-                'backgrounInMoveMain': {
+                'backgrounInMoveMainChicken': {
                     '0%': {
                         backgroundPosition: '20% 10%',
                         backgroundSize: '160%',
@@ -50,6 +53,20 @@ module.exports = {
                     '100%': {
                         backgroundPosition: '20% 10%',
                         backgroundSize: '160%',
+                    },
+                },
+                'backgrounInMoveMainDuck': {
+                    '0%': {
+                        backgroundPosition: '10% 80%',
+                        backgroundSize: '110%',
+                    },
+                    '50%': {
+                        backgroundPosition: '10% 40%',
+                        backgroundSize: '110%',
+                    },
+                    '100%': {
+                        backgroundPosition: '10% 80%',
+                        backgroundSize: '110%',
                     },
                 },
                 'backgrounInMoveInfo': {
@@ -65,7 +82,21 @@ module.exports = {
                         backgroundPosition: '260% -30%',
                         backgroundSize: '86%',
                     },
-                }
+                },
+                'backgrounInMoveInfoHalfScreen': {
+                    '0%': {
+                        backgroundPosition: '0 50%',
+                        backgroundSize: '110%',
+                    },
+                    '50%': {
+                        backgroundPosition: '40% 40%',
+                        backgroundSize: '110%',
+                    },
+                    '100%': {
+                        backgroundPosition: '0 50%',
+                        backgroundSize: '110%',
+                    },
+                },
             },
         },
     },

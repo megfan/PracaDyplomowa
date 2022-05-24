@@ -482,16 +482,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 4rem;
 }
 
-.my-16{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.mx-16{
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -502,20 +492,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.mt-32{
-  margin-top: 8rem;
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
-.mb-32{
-  margin-bottom: 8rem;
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mb-4{
   margin-bottom: 1rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .mt-8{
@@ -526,8 +518,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
+.mr-4{
+  margin-right: 1rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
+}
+
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
 }
 
 .ml-4{
@@ -554,12 +562,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-2\/5{
   width: 40%;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .w-4{
@@ -628,17 +636,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-greenLight{
   --tw-border-opacity: 1;
-  border-color: rgb(40 58 54 / var(--tw-border-opacity));
+  border-color: rgb(48 54 66 / var(--tw-border-opacity));
 }
 
-.bg-greenTxt{
+.bg-blueTxt{
   --tw-bg-opacity: 1;
   background-color: rgb(104 157 148 / var(--tw-bg-opacity));
 }
 
-.bg-greenDark{
+.bg-green{
   --tw-bg-opacity: 1;
-  background-color: rgb(28 39 40 / var(--tw-bg-opacity));
+  background-color: rgb(95 217 208 / var(--tw-bg-opacity));
+}
+
+.bg-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 37 44 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -648,7 +661,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-greenMedium{
   --tw-bg-opacity: 1;
-  background-color: rgb(37 50 52 / var(--tw-bg-opacity));
+  background-color: rgb(44 51 64 / var(--tw-bg-opacity));
 }
 
 .p-0\.5{
@@ -674,6 +687,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-3{
@@ -716,14 +734,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs{
@@ -748,6 +766,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -756,14 +778,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.1em;
 }
 
-.text-greenTxt{
+.text-blueTxt{
   --tw-text-opacity: 1;
-  color: rgb(104 157 148 / var(--tw-text-opacity));
+  color: rgb(95 217 208 / var(--tw-text-opacity));
 }
 
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-darkTXT{
+  --tw-text-opacity: 1;
+  color: rgb(33 37 44 / var(--tw-text-opacity));
+}
+
+.text-greenTxt{
+  --tw-text-opacity: 1;
+  color: rgb(95 217 208 / var(--tw-text-opacity));
 }
 
 .shadow-md{
@@ -807,19 +839,19 @@ body, html, #root {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-greenDark:hover{
+.hover\:bg-dark:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(28 39 40 / var(--tw-bg-opacity));
+  background-color: rgb(33 37 44 / var(--tw-bg-opacity));
 }
 
 .focus\:border-greenLight:focus{
   --tw-border-opacity: 1;
-  border-color: rgb(40 58 54 / var(--tw-border-opacity));
+  border-color: rgb(48 54 66 / var(--tw-border-opacity));
 }
 
 .focus\:bg-greenLight:focus{
   --tw-bg-opacity: 1;
-  background-color: rgb(40 58 54 / var(--tw-bg-opacity));
+  background-color: rgb(61 70 86 / var(--tw-bg-opacity));
 }
 
 .focus\:ring-greenLight:focus{
@@ -835,12 +867,12 @@ body, html, #root {
 
   .dark\:border-greenLight{
     --tw-border-opacity: 1;
-    border-color: rgb(40 58 54 / var(--tw-border-opacity));
+    border-color: rgb(48 54 66 / var(--tw-border-opacity));
   }
 
-  .dark\:bg-greenDark{
+  .dark\:bg-dark{
     --tw-bg-opacity: 1;
-    background-color: rgb(28 39 40 / var(--tw-bg-opacity));
+    background-color: rgb(33 37 44 / var(--tw-bg-opacity));
   }
 
   .dark\:bg-white{
@@ -850,7 +882,7 @@ body, html, #root {
 
   .dark\:bg-greenMedium{
     --tw-bg-opacity: 1;
-    background-color: rgb(37 50 52 / var(--tw-bg-opacity));
+    background-color: rgb(44 51 64 / var(--tw-bg-opacity));
   }
 
   .dark\:text-white{
@@ -865,16 +897,11 @@ body, html, #root {
 
   .dark\:hover\:bg-greenMedium:hover{
     --tw-bg-opacity: 1;
-    background-color: rgb(37 50 52 / var(--tw-bg-opacity));
+    background-color: rgb(44 51 64 / var(--tw-bg-opacity));
   }
 
   .dark\:focus\:border-greenLight:focus{
     --tw-border-opacity: 1;
-    border-color: rgb(40 58 54 / var(--tw-border-opacity));
-  }
-
-  .dark\:focus\:ring-greenDark:focus{
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(28 39 40 / var(--tw-ring-opacity));
+    border-color: rgb(48 54 66 / var(--tw-border-opacity));
   }
 }

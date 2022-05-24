@@ -15,8 +15,8 @@ export const Input: FC<InputProps> = ({index, onChange, inputWidth}) => {
                        autoComplete={'off'}
                        onChange={(v) => onChange(index, v.target.valueAsNumber)}
                        className={'bg-greenMedium border border-greenLight text-greenLight text:D-sm rounded-lg ' +
-                           'focus:ring-greenLight focus:border-greenLight focus:bg-greenLight block pl-4 p-2.5 dark:bg-greenDark dark:border-greenLight ' +
-                           'dark:text-white dark:focus:ring-greenDark dark:focus:border-greenLight ' + inputWidth}/>
+                           'focus:ring-greenLight focus:border-greenLight focus:bg-greenLight block pl-4 p-2.5 dark:bg-dark dark:border-greenLight ' +
+                           'dark:text-white dark:focus:ring-dark dark:focus:border-greenLight ' + inputWidth}/>
             </div>
     )
 };

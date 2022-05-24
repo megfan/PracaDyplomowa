@@ -4,8 +4,8 @@ import {recommendedDosesData} from "../localDB/RecommendedDB";
 
 export const RecomendedDoses = () => {
     return <>
-        <tr className="text-xs text-greenTxt bg-greenDark dark:bg-greenDark dark:greenTxt uppercase">
-            <th className="px-6 py-3" scope="row">Zalecane w 1 kg paszy dla różnych grup produkcyjnych:</th>
+        <tr className="text-xs text-greenTxt bg-dark dark:bg-dark dark:greenTxt uppercase">
+            <th className="px-6 py-8" scope="row">Zalecane w 1 kg paszy dla różnych grup produkcyjnych:</th>
             <th className="px-6 py-3"/>
             <th className="px-6 py-3"/>
             <th className="px-6 py-3"/>

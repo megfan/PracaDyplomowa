@@ -1,4 +1,5 @@
-import {Ingredient} from "../DataTableState";
+import {Ingredient} from "../components/DataTable/DataTableState";
+
 
 export const ingredientsList: Ingredient[] = [
     {

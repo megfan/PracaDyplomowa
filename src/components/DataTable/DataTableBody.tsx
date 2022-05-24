@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {DataTableState, Ingredient} from "../../DataTableState";
+import {DataTableState, Ingredient} from "./DataTableState";
 import {observer} from "mobx-react-lite";
 import {Input} from "./Input";
 import {InputWithConversion} from "./InputWithConversion";
@@ -14,7 +14,7 @@ export const DataTableBody: FC<DataTableBodyProps> = (observer(({list, state}) =
     return (<>
         {list.map(ingredient => {
             return <tr
-                className="bg-white border-b dark:bg-greenDark dark:border-greenLight hover:bg-greenDark dark:hover:bg-greenMedium">
+                className="bg-white border-b dark:bg-dark dark:border-greenLight hover:bg-dark dark:hover:bg-greenMedium">
                 <th scope="row" className="px-6 py-4 font-medium text-greenTxt dark:text-white whitespace-nowrap">
                     {ingredient.name}
                 </th>

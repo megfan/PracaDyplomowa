@@ -1,22 +1,21 @@
 import React, {FC} from 'react';
 import {observer} from "mobx-react-lite"
-import {Home} from "./components/Home";
-import {DataTable} from "./components/DataTable/DataTable";
 import {Navbar} from "./components/Navbar";
-import {Info} from "./components/Info";
 import {Footer} from "./components/Footer";
+import {BrowserRouter} from "react-router-dom";
+import {RouterApp} from "./components/RouterApp";
 
 
 export const App: FC = observer(() => {
     return (
-        <div className='App'>
-            <Navbar/>
-            <Home/>
-            <DataTable/>
-            <Info/>
-            <Footer/>
-        </div>
-    )
+        <BrowserRouter>
+            <div className='App'>
+                <Navbar/>
+                <RouterApp/>
+                <Footer/>
+            </div>
+        </BrowserRouter>
+)
 });
 
 export default App;

@@ -1,5 +1,5 @@
 import {action, computed, makeObservable, observable} from "mobx";
-import {ingredientsList} from "./localDB/DB";
+import {ingredientsList} from "../../localDB/DB";
 
 
 export interface Ingredient {
@@ -39,7 +39,7 @@ export class DataTableState {
 
     @action
     setDataValue(index: number, value: number): void {
-        this.dataValues.set(index, value);
+        this.dataValues.set(index, value ?? 0);
         this.setSummaryValue();
     }
 

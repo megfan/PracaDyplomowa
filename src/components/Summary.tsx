@@ -10,7 +10,7 @@ interface SummaryProps {
 export const Summary: FC<SummaryProps> = (observer((
     {summaryList, totalVal, totalPrice}) => {
     return <tr>
-        <th className="px-6 py-3">W 1 kg przygotowanej mieszanki</th>
+        <th className="px-6 py-8">W 1 kg przygotowanej mieszanki</th>
         <th className="px-6 py-3">{totalVal}&nbsp;%</th>
         <th className="px-6 py-3">{totalPrice}&nbsp;PLN</th>
         {summaryList.map(([key, val]) => {
