@@ -14,20 +14,3 @@ export const headerData = {
     p: 'P ogólny(g)',
     na: 'Na(g)',
 };
-
-// export enum basicKeys {
-//     name,
-//     share,
-//     price,
-//     sm,
-//     mj,
-//     białko,
-//     lizyna,
-//     metionina,
-//     tryptofan,
-//     arginina,
-//     włókno,
-//     ca,
-//     p,
-//     na,
-// };

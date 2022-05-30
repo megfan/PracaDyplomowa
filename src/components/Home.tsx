@@ -3,7 +3,6 @@ import React, {FC} from 'react';
 export interface HomeProps {
     bg: string;
     type: string;
-
 }
 
 export const Home: FC<HomeProps> = (({bg, type}) => {

@@ -1,8 +1,22 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {recommendedDosesData} from "../localDB/RecommendedDB";
+import {birdType} from "../AppState";
+import {recommendedDosesDucks} from "../localDB/recommendedDosesDucks";
+import {recommendedDosesNumididae} from "../localDB/RecommendedDosesNumididae";
 
+export interface RecomendedDosesProps {
+    bird: birdType;
+}
 
-export const RecomendedDoses = () => {
+export const RecomendedDoses: FC<RecomendedDosesProps> = (({bird}) => {
+
+    const birdIDosesList = () => {
+        switch(bird) {
+            case birdType.CHICKEN:   return recommendedDosesData;
+            case birdType.NUMIDIES: return recommendedDosesNumididae;
+            case birdType.DUCK:   return recommendedDosesDucks;
+        }
+    }
     return <>
         <tr className="text-xs text-greenTxt bg-dark dark:bg-dark dark:greenTxt uppercase">
             <th className="px-6 py-8" scope="row">Zalecane w 1 kg paszy dla różnych grup produkcyjnych:</th>
@@ -21,7 +35,7 @@ export const RecomendedDoses = () => {
             <th className="px-6 py-3">Na</th>
         </tr>
         
-        {recommendedDosesData.map(d => {
+        {!!birdIDosesList && birdIDosesList().map(d => {
             return <tr
                 className="bg-white border-b dark:bg-white dark:border-gray-100 hover:bg-gray-50 dark:hover:bg-gray-200"
                 key={'recommendeDOsesData' + d.białko + d.lizyna}>
@@ -42,4 +56,4 @@ export const RecomendedDoses = () => {
             </tr>
         })}
     </>
-}
+});

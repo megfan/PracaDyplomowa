@@ -13,7 +13,7 @@ interface DataTableBodyProps {
 export const DataTableBody: FC<DataTableBodyProps> = (observer(({list, state}) => {
     return (<>
         {list.map(ingredient => {
-            return <tr
+            return <tr key={'DataTableBody' + ingredient.index + ingredient.name}
                 className="bg-white border-b dark:bg-dark dark:border-greenLight hover:bg-dark dark:hover:bg-greenMedium">
                 <th scope="row" className="px-6 py-4 font-medium text-greenTxt dark:text-white whitespace-nowrap">
                     {ingredient.name}
@@ -32,11 +32,11 @@ export const DataTableBody: FC<DataTableBodyProps> = (observer(({list, state}) =
                 </td>
 
 
-                {Object.values(ingredient.converters).map(v => {
+                {Object.values(ingredient.converters).map((v, idx) => {
                     return <ConversionValues
                         value={state.dataValues.get(ingredient.index)}
                         converter={v}
-                        key={'conversionValues' + v}/>
+                        key={'conversionValues' + v + ingredient.name + idx}/>
                 })}
             </tr>
         })}

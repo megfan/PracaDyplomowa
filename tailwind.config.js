@@ -23,8 +23,8 @@ module.exports = {
                 'greenLight': '#303642',
             },
             textColor: {
-                'blueTxt': '#5fd9d0',
-                'greenTxt': '#5fd9d0',
+                'blueTxt': '#48b1a9',
+                'greenTxt': '#48b1a9',
                 'darkTXT': '#21252c',
             },
             ringColor: {
