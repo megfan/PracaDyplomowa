@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/PracaDyplomowa/static/css/main.d53cca46.css",
-    "main.js": "/PracaDyplomowa/static/js/main.70664c6b.js",
+    "main.css": "/PracaDyplomowa/static/css/main.97fa13a4.css",
+    "main.js": "/PracaDyplomowa/static/js/main.fd67c8d3.js",
     "static/js/787.a801de80.chunk.js": "/PracaDyplomowa/static/js/787.a801de80.chunk.js",
+    "static/media/D2.jpg": "/PracaDyplomowa/static/media/D2.a18bff9d114ec56b55cf.jpg",
+    "static/media/P2.jpg": "/PracaDyplomowa/static/media/P2.e246dc8cbac2aa822771.jpg",
     "static/media/Ch3.jpg": "/PracaDyplomowa/static/media/Ch3.eb0291ea516aae1dd43e.jpg",
+    "static/media/D5.jpg": "/PracaDyplomowa/static/media/D5.7f48252231e51b6a6e1e.jpg",
     "static/media/Ch1.jpg": "/PracaDyplomowa/static/media/Ch1.ed92079d3211fd5249ee.jpg",
+    "static/media/P1.jpg": "/PracaDyplomowa/static/media/P1.8946ac62eb6176f48b3d.jpg",
     "index.html": "/PracaDyplomowa/index.html",
-    "main.d53cca46.css.map": "/PracaDyplomowa/static/css/main.d53cca46.css.map",
-    "main.70664c6b.js.map": "/PracaDyplomowa/static/js/main.70664c6b.js.map",
+    "main.97fa13a4.css.map": "/PracaDyplomowa/static/css/main.97fa13a4.css.map",
+    "main.fd67c8d3.js.map": "/PracaDyplomowa/static/js/main.fd67c8d3.js.map",
     "787.a801de80.chunk.js.map": "/PracaDyplomowa/static/js/787.a801de80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d53cca46.css",
-    "static/js/main.70664c6b.js"
+    "static/css/main.97fa13a4.css",
+    "static/js/main.fd67c8d3.js"
   ]
 }
