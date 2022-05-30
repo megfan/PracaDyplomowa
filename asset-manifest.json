@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/PracaDyplomowa/static/css/main.d53cca46.css",
+    "main.js": "/PracaDyplomowa/static/js/main.70664c6b.js",
+    "static/js/787.a801de80.chunk.js": "/PracaDyplomowa/static/js/787.a801de80.chunk.js",
+    "static/media/Ch3.jpg": "/PracaDyplomowa/static/media/Ch3.eb0291ea516aae1dd43e.jpg",
+    "static/media/Ch1.jpg": "/PracaDyplomowa/static/media/Ch1.ed92079d3211fd5249ee.jpg",
+    "index.html": "/PracaDyplomowa/index.html",
+    "main.d53cca46.css.map": "/PracaDyplomowa/static/css/main.d53cca46.css.map",
+    "main.70664c6b.js.map": "/PracaDyplomowa/static/js/main.70664c6b.js.map",
+    "787.a801de80.chunk.js.map": "/PracaDyplomowa/static/js/787.a801de80.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d53cca46.css",
+    "static/js/main.70664c6b.js"
+  ]
+}
