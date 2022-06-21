@@ -1,4 +1,4 @@
-import {action, computed, makeObservable, observable} from "mobx";
+import {action, makeObservable, observable} from "mobx";
 import {ingredientsList} from "../../localDB/DB";
 
 
@@ -32,20 +32,33 @@ export class DataTableState {
     @observable
     summaryValues = new Map<string, number>();
 
-    
+    @observable
+    summaryTotal: number = 0;
+
+    @observable
+    priceTotal: number = 0;
+
+
     constructor() {
         makeObservable(this);
     }
 
     @action
     setDataValue(index: number, value: number): void {
-        this.dataValues.set(index, value ?? 0);
+        this.dataValues.set(index, isNaN(value) ? 0 : value);
         this.setSummaryValue();
+        if (this.prices.has(index)) {
+            this.sumTotalPrices();
+        }
+
     }
 
     @action
     setPrice(index: number, value: number): void {
-        this.prices.set(index, value);
+        this.prices.set(index, isNaN(value) ? 0 : value);
+        if (this.dataValues.has(index)) {
+            this.sumTotalPrices();
+        }
     }
 
     @action
@@ -57,30 +70,32 @@ export class DataTableState {
                 Object.keys(row).map(e => {
                     let previousValue = this.summaryValues.get(e);
                     return this.summaryValues.set(e, Number(((((row as any)[e] * val) / 100) + (previousValue ?? 0)).toFixed(2)))
-                })}
-        })
+                })
+            }
+        });
+       
+        this.sumTotalValues();
     }
-    
-    @computed
-    get summaryTotal(): number {
+
+    @action
+    sumTotalValues() {
         let sum = 0;
         this.dataValues.forEach((val, key) => {
             sum += val;
-        })
-        // Array.from(this.dataValues).reduce((sum, [val,key]) => {
-        //     return sum += val;
-        // },0);
-        return sum;
+        });
+        this.summaryTotal = sum;
     }
 
-    @computed
-    get priceTotal(): number {
-        let sum = 0;
+    @action
+    sumTotalPrices() {
+        let price = 0;
         this.prices.forEach((val, key) => {
-            sum += (val * (this.dataValues.get(key) ?? 1)) /100;
-        })
-        return sum;
+            price += (val * (this.dataValues.get(key) ?? 1)) / 100;
+        });
+        this.priceTotal = price;
     }
+
+
 }
 
 export const dataState = new DataTableState();

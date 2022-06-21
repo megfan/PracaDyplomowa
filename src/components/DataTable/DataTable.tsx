@@ -30,8 +30,7 @@ export const DataTable: FC<DataTableProps> = (({bird}) => {
                     <tbody>
                     <DataTableBody list={ingredientsList} state={state}/>
                     <Summary summaryList={Array.from(state.summaryValues)}
-                             totalVal={state.summaryTotal}
-                             totalPrice={state.priceTotal}
+                             state={state}
                     />
                     <RecomendedDoses bird={bird}/>
                     </tbody>
