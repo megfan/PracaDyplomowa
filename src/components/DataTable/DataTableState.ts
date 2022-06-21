@@ -37,8 +37,7 @@ export class DataTableState {
 
     @observable
     priceTotal: number = 0;
-
-
+    
     constructor() {
         makeObservable(this);
     }
@@ -50,7 +49,6 @@ export class DataTableState {
         if (this.prices.has(index)) {
             this.sumTotalPrices();
         }
-
     }
 
     @action
@@ -94,8 +92,6 @@ export class DataTableState {
         });
         this.priceTotal = price;
     }
-
-
+    
 }
 
-export const dataState = new DataTableState();

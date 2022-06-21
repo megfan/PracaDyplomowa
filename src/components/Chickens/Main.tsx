@@ -25,7 +25,7 @@ export const Main: FC<MainProps> = ({background, bird, type}) => {
     
     return (<>
             <Home bg={background} type={type}/>
-            <DataTable bird={bird}/>
+            <DataTable bird={bird} type={type}/>
             {birdInfoPage()}
         </>
     )

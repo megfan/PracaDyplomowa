@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import {DataTableHeader} from "./DataTableHeader";
-import {dataState} from "./DataTableState";
+import {DataTableState} from "./DataTableState";
 import {ingredientsList} from "../../localDB/DB";
 import {headerData} from "../../localDB/headerData";
 import {Summary} from "../Summary";
@@ -10,10 +10,11 @@ import {birdType} from "../../AppState";
 
 export interface DataTableProps {
     bird: birdType;
+    type: string;
 }
 
-export const DataTable: FC<DataTableProps> = (({bird}) => {
-    const state = dataState;
+export const DataTable: FC<DataTableProps> = (({bird, type}) => {
+    const state = new DataTableState();
 
     return <>
         <div className="relative overflow-x-auto my-16 mx-16 pb-8">
@@ -29,9 +30,7 @@ export const DataTable: FC<DataTableProps> = (({bird}) => {
                     <DataTableHeader list={Object.values(headerData)}/>
                     <tbody>
                     <DataTableBody list={ingredientsList} state={state}/>
-                    <Summary summaryList={Array.from(state.summaryValues)}
-                             state={state}
-                    />
+                    <Summary state={state}/>
                     <RecomendedDoses bird={bird}/>
                     </tbody>
                 </table>

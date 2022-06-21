@@ -19,7 +19,6 @@ export class AppState {
     @action
     setType(t: birdType): void {
         this.type = t;
-        console.log(t);
     }
 
 };
